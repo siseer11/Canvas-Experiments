@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SnakeRi</title>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class='wrapper'>
+		<canvas></canvas>
+		<div class='interface'>
+			<div class='countdown'></div>
+			<!-- De facut gen >Start si cand e pe el sa fie cu zoom -->
+			<ul class='resume-menu'>
+				<li data-to='resume' class='active'>Resume</li>
+				<li data-to='restart'>Restart</li>
+				<li data-to='menu'>Menu</li>
+			</ul>
+			<ul class='main'>
+				<li data-for='new-game' class='active'>New Game</li>
+				<li data-for='options'>Options</li>
+				<li data-for='ranking'>Ranking</li>
+
+			</ul>
+			<ul class='options'>
+				<li>
+					<h2>Dificulty:</h2>
+					<span><</span>
+					<p data-dificulty='easy' class='dificulty active'>Easy<span>*you can go through the walls</span></p>
+					<p data-dificulty='medium' class='dificulty'>Medium<span>*you can not go through the walls</span></p>
+					<p data-dificulty='hard' class='dificulty'>Hard<span>*you can't go through the walls, in the middle is an obstacle</span></p>
+					<span>></span>
+				</li>
+			</ul>
+			<ul class='ranking'>
+			</ul>
+			<div class='game-over'>
+				<p>GAME OVER</p>
+				
+				<ul class='over-options'>
+					<li data-to='retry' class='active'>Retry</li>
+					<li data-to='menu'>Menu</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class='points'>
+			<p>Points:</p><p class='numberPoints'>0</p>
+		</div>
+	</div>
+	<script type="text/javascript" src='js.js'></script>
+	<script type="text/javascript" src='interface-js.js'></script>
+</body>
+</html>
