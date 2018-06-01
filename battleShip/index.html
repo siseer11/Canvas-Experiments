@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Puscaciu</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			cursor: crosshair;
+		}
+		canvas{
+			background: #C5C5C5
+		}
+		svg{
+			width: 20px;
+		}
+		.bullets{
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			top:10px;
+			right: 10px;
+		}
+		p{
+			margin: 0 10px;
+			display: inline-block;
+			font-family: sans-serif;
+		}
+		p::selection{
+			background: transparent;
+		}
+	</style>
+</head>
+<body>
+	<div class='bullets'>
+		<p>10/10</p>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 32.5">
+			<path d="M0,24h1v1H0v1h8v-1H7v-1h1V8H0V24z M2,9h1v10H2V9z M2,20h1v2H2V20z"/><path d="M4,0C1,0,0,4.791,0,7h8C8,4.791,7,0,4,0z"/><path d="M9,24h1v1H9v1h8v-1h-1v-1h1V8H9V24z M11,9h1v10h-1V9z M11,20h1v2h-1V20z"/><path d="M13,0c-3,0-4,4.791-4,7h8C17,4.791,16,0,13,0z"/><path d="M18,24h1v1h-1v1h8v-1h-1v-1h1V8h-8V24z M20,9h1v10h-1V9z M20,20h1v2h-1V20z"/><path d="M22,0c-3,0-4,4.791-4,7h8C26,4.791,25,0,22,0z"/>
+		</svg>
+	</div>
+<canvas></canvas>
+
+<script type="text/javascript" src='js.js'></script>
+</body>
+</html>
